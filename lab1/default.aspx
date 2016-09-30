@@ -23,6 +23,18 @@
             <asp:ListItem Value="QC" Text="QC" />
         </asp:DropDownList>
     </div>
+    <div class="form-group">
+        <label for="rbtLstEducation" class="control-label col-sm-2">Education Level: </label>
+        <asp:RadioButtonList ID="rbtLstEducation" runat="server" 
+            RepeatDirection="Vertical" RepeatLayout="Table">
+            <asp:ListItem Text="High School" Value="High School"></asp:ListItem>
+            <asp:ListItem Text="College" Value="College"></asp:ListItem>
+            <asp:ListItem Text="Graduate" Value="Graduate"></asp:ListItem>
+            <asp:ListItem Text="Other" Value="Other"></asp:ListItem>
+        </asp:RadioButtonList> 
+    </div>
+    
+
     <asp:Button ID="btnShow" runat="server" Text="Submit" CssClass="btn btn-success col-sm-offset-2" OnClick="btnShow_Click" />
     <div>
         Name: <asp:Label ID="lblName" runat="server" />
@@ -35,6 +47,9 @@
     </div>
     <div>
         Province: <asp:Label ID="lblprovince" runat="server" />
+    </div>
+    <div>
+        Education Level: <asp:Label ID="lblEducation" runat="server" />
     </div>
 
 </asp:Content>

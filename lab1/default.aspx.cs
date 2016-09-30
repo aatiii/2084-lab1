@@ -21,7 +21,8 @@ namespace lab1
             lblAdd.Text = txtAdd.Text;
             lblPW.Text = txtPW.Text;
             lblprovince.Text = ddlProvince.Text;
-           
+            lblEducation.Text = rbtLstEducation.Text;
+
         }
 
         
