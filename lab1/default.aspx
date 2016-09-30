@@ -6,5 +6,35 @@
         <label for="txtName" class="control-label col-sm-2">Name: </label>
         <asp:TextBox ID="txtName" runat="server" />
     </div>
+    <div class="form-group">
+        <label for="txtPW" class="control-label col-sm-2">Password: </label>
+        <asp:TextBox ID="txtPW" TextMode="Password" runat="server" />
+    </div>
+    <div class="form-group">
+        <label for="txtAdd" class="control-label col-sm-2">Address: </label>
+        <asp:TextBox id="txtAdd" runat="server" TextMode="MultiLine"></asp:TextBox>
+    </div>
+    <div class="form-group">
+        <label for="ddlProvince" class="control-label col-sm-2">Province: </label>
+        <asp:DropDownList ID="ddlProvince" runat="server">
+            <asp:ListItem Value="AB" Text="AB" />
+            <asp:ListItem Value="BC" Text="BC" />
+            <asp:ListItem Value="ON" Text="ON" />
+            <asp:ListItem Value="QC" Text="QC" />
+        </asp:DropDownList>
+    </div>
+    <asp:Button ID="btnShow" runat="server" Text="Submit" CssClass="btn btn-success col-sm-offset-2" OnClick="btnShow_Click" />
+    <div>
+        Name: <asp:Label ID="lblName" runat="server" />
+    </div>
+    <div>
+        Password: <asp:Label ID="lblPW" runat="server" />
+    </div>
+    <div>
+        Address: <asp:Label ID="lblAdd" runat="server" />
+    </div>
+    <div>
+        Province: <asp:Label ID="lblprovince" runat="server" />
+    </div>
 
 </asp:Content>

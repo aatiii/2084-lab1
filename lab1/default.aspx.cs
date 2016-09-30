@@ -13,5 +13,17 @@ namespace lab1
         {
 
         }
+
+        protected void btnShow_Click(object sender, EventArgs e)
+        {           
+
+            lblName.Text = txtName.Text;
+            lblAdd.Text = txtAdd.Text;
+            lblPW.Text = txtPW.Text;
+            lblprovince.Text = ddlProvince.Text;
+           
+        }
+
+        
     }
 }
